@@ -23,13 +23,12 @@ or other words the it pass from outside to inside never inside to outside`
 /* Task 2: Counter */
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
-let count = 4;
-function sumation(){
-  
-  return function counter(){
-    for (let i = 0; i <=count; i++)
-     console.log (count++);
+
+function sumation(number){
+  let counter = 0;
+  for (let i = 0; i <= number; i++){
+    counter += i;
   }
-   
+  return counter;
 }
-sumation();
+console.log(sumation(4));
